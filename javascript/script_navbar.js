@@ -20,10 +20,12 @@ function scrollToTarget(targetId) {
 console.log("Current page pathname:", window.location.pathname);
 
 // Controlla se l'URL attuale è home.html
-if (window.location.pathname === 'berserkey.github.io/doppionodo/index.html') {
+if (window.location.pathname === '/doppionodo/index.html') {
   // Funzioni per gestire i click sui link
   document.getElementById('link-chi-siamo').addEventListener('click', function(event) {
     event.preventDefault();
+    console.log("entrato");
+
     scrollToTarget('chi-siamo');
   });
 
