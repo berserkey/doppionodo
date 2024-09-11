@@ -18,7 +18,7 @@ function scrollToTarget(targetId) {
   }
 }
 // Controlla se l'URL attuale è home.html
-if (window.location.pathname === 'index.html') {
+if (window.location.pathname === '/index.html') {
   // Funzioni per gestire i click sui link
   document.getElementById('link-chi-siamo').addEventListener('click', function(event) {
     event.preventDefault();
@@ -48,7 +48,7 @@ if (window.location.pathname === 'index.html') {
   
 }
 
-if (window.location.pathname === 'policy.html') {
+if (window.location.pathname === '/policy.html') {
   // Funzioni per gestire i click sui link
   document.getElementById('link-cookie').addEventListener('click', function(event) {
     event.preventDefault();
