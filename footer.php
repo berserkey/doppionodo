@@ -1,10 +1,3 @@
-<?php
-
-$circle_error = '<i class="fas fa-circle-exclamation"></i>';
-$placeholder_value = "EMAIL*";
-
-?>
-
 <footer class="footer">
 
   <div class="footer-left">

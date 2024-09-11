@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  
+  <head>
+
+  <title>Doppio Nodo - Tappeti Persiani a Genova | Vendita, Restauro e Lavaggio</title>
+  <meta name="description" content="Doppio Nodo: Negozio specializzato in tappeti persiani a Genova. Vendita di tappeti pregiati, restauro e lavaggio professionali. Scopri la nostra vasta collezione di pezzi unici e la passione per l'artigianato e l'arte orientale.">
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Nunito+Sans&family=Noto+Sans:wght@200;300&family=Philosopher&family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../header/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../header/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style_navbar.css">
+  <link rel="stylesheet" href="../css/style_footer.css">
+    <link rel="stylesheet" href="css/style_home.css">
+
+  </head>
+
+  <body>
+
+    <div id="loading-screen">
+      <div class="logo-container">
+        <img src="../images/logo.png" alt="Logo Doppio Nodo">
+        <div id="spinner"></div>
+      </div>
+    </div>
+    
+    <nav>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+    
+      <div class="logo">
+        <a href="index.php">
+          <img src="../images/logo.png" class="small" alt="Logo Doppio Nodo">
+        </a>
+      </div>
+    
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="index.php#chi-siamo" id="link-chi-siamo">Chi siamo</a></li>
+        <li><a href="index.php#restauro" id="link-restauro">Restauro</a></li>
+        <li><a href="index.php#lavaggio" id="link-lavaggio">Lavaggio</a></li>
+        <li><a href="#dove_siamo" id="link-dove-siamo">Dove siamo</a>
+        <li><a href="#contatti" id="link-contatti">Contatti</a></li>
+      </ul>
+    
+      <script>
+        // Seleziona tutti i link del menu
+        const navLinks = document.querySelectorAll('nav ul li a');
+        const checkbox = document.getElementById('click');
+    
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            // Deseleziona il checkbox (chiude il menu)
+            checkbox.checked = false;
+          });
+        });
+      </script>
+    
+    </nav>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-touch="true" data-bs-ride="carousel" data-bs-interval=3000>
+      <div class="carousel-inner">
+        <div class="carousel-item active first">
+          <div class="overlay">
+            <h1 id="text1"> I nostri tappeti...</h1> 
+          </div>
+          <picture>            
+            <source media="(min-width:1200px)" srcset="../images/sliding_images/principale.jpg" class="sliding">
+            <source media="(min-width:576px)" srcset="../images/sliding_images/principale_media.jpg" class="sliding">
+            <img class="d-block w-100 sliding" src="../images/sliding_images/principale_piccola.jpg" alt="Foto dell'interno del negozio">
+          </picture>
+        </div>
+        
+        <div class="carousel-item second" data-bs-interval="3000">
+          
+            <div class="overlay2">
+                <h1 id="text2"> ...raccontano una storia.</h1>
+              </div>
+            <picture>
+              <source media="(min-width:1200px)" srcset="../images/sliding_images/negozio_dentro.jpg" class="sliding">
+              <source media="(min-width:576px)" srcset="../images/sliding_images/negozio_dentro_media.jpg" class="sliding">
+              <img class="d-block w-100 sliding" src="../images/sliding_images/negozio_dentro_piccola.jpg" alt="Altra foto dell'interno del negozio" >
+          </picture>
+        </div>
+
+        <div class="carousel-item third" data-bs-interval="8000">
+         
+          <div class="overlay3">
+                <h1 id="text3"> Da più di 30 anni</h1>
+                <h1 id="text4"> Genova, via Ippolito d'Aste 26/R</h1>
+              </div>
+            <picture>
+              <source media="(min-width:1200px)" srcset="../images/sliding_images/negozio_fuori.jpg" class="sliding">
+              <source media="(min-width:576px)" srcset="../images/sliding_images/negozio_fuori_media.jpg" class="sliding">
+              <img class="d-block w-100 sliding" src="../images/sliding_images/negozio_fuori_piccola.jpg" alt="Foto dell'esterno del negozio">
+          </picture>
+        </div>
+
+
+      </div>
+  
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+    <div class="main-content">
+      <div class="main"> 
+        <hr>
+        <h1 id="chi-siamo"> Chi siamo </h1>
+        <div class = "paragraph">
+        <p> 
+          <br>Doppio Nodo nasce dal sogno di un bambino.<br><br>
+          Ali Parto ha solo sei anni quando, guidato dallo zio, esplora le vie affollate dei bazar,
+          stringe amicizia con i mercanti e gli artigiani del posto e da loro impara tutti i segreti sull'arte
+          del tappeto e del restauro, un mestiere antichissimo e affascinante.<br><br>
+          Crescendo, il suo amore per questi preziosi tessuti diventa sempre più forte e dopo anni
+          di duro lavoro e ricerca di tappeti unici e di alta qualità, Ali apre il suo negozio per
+          condividere la sua passione con il mondo e per diffondere la bellezza e l'arte del tappeto orientale
+          alle generazioni future.<br><br>
+          Ed è grazie a questo amore che oggi Doppio Nodo è da più di trent'anni un punto di riferimento a Genova.
+          I nostri tappeti sono simboli di legami forti e indissolubili. Raccontano una storia.<br><br>
+          Siamo onorati di bussare con questa storia alla vostra porta e di essere una piccola, ma importante parte dei vostri ricordi. </p>
+        </div>
+        
+        <br><br>
+
+        <div class = "paragraph">
+          <h2>Articoli e tappeti pregiati </h2>
+          <h3>Tappeti particolari sì, ma rigorosamente tradizionali</h3>
+          <br>
+          <p>
+            Doppio Nodo effettua una meticolosa ricerca nei villaggi che appartengono storicamente alla manifattura dei tappeti pregiati di antica lavorazione.
+            I nostri tappeti sono esclusivamente di origine caucasica e persiana, con le lane filate a mano e colorate con sostanze
+            naturali (vegetali ed animali).<br>Ogni pezzo è un pezzo esclusivo ed un esemplare unico. <br><br> Visitando
+            il nostro negozio vi immergerete in un mondo meraviglioso dai sapori antichi, ammirando, oltre ai tappeti, i kilim,
+            sacchi di trasporto contenitori di sale e di spezie, e altre manifatture osservabili solamente in musei ed esposizioni d'arte. </p>
+          <br><br> 
+          <hr>
+        </div>
+
+        <h1 id="servizi"> I nostri servizi </h1>
+        <br><br>
+        <h2 id="restauro"> Restauro </h2>
+        <br>
+      
+
+        <div class = "paragraph">
+          <p> 
+            Doppio Nodo ripara e restaura qualsiasi tipo di tappeto.<br><br>
+            Tutti i lavori, dalla rottura delle frange o del bordo
+            al rammendare grossi strappi, buchi o aree devastate dalle tarme,
+            è effettuato personalmente da noi nella nostra sede a Genova
+            e questo ci permette di proporvi i migliori prezzi sul mercato.<br><br>
+            Poiché il costo del restauro di un tappeto deve essere proporzionale al suo valore,
+            Doppio Nodo stima gratuitamente il valore del vostro tappeto e vi propone le soluzioni di restauro
+            più adatte per riportarlo in condizioni ottimali e per essere nuovamente calpestato. </p>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img src="../images/restauro/tappeto-prima.jpg" alt="tappeto prima del restauro" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="../images/restauro/tappeto-dopo.jpg" alt="tappeto dopo il restauro" style="width:100%">
+          </div>
+        </div>
+        
+        <br><br>
+        <hr>
+        <br><br>
+        <h2 id="lavaggio"> Lavaggio </h2>
+        <br>
+      
+
+        <div class = "paragraph">
+          <p>
+            Il vostro tappeto viene lavato SINGOLARMENTE senza essere mischiato con altri tappeti. <br><br>
+
+            Come per il restauro, Doppio Nodo effettua un lavaggio professionale assicurandosi che al vostro tappeto venga dato il livello di cura e attenzione che merita.
+            Anni di esperienza nel settore ci permettono di offrirvi i migliori consigli sulle modalità di lavaggio
+            che il vostro tappeto deve affrontare: i tappeti più antichi e fragili non possono passare per lo stesso procedimento dei tappeti più nuovi e resistenti.<br><br>
+
+            Usiamo i prodotti di più alta qualità, mediante lavaggio ad acqua, rispettando la tradizione e l'ambiente.<br><br>
+
+            Il tappeto viene prima delicatamente depolverizzato e successivamente lavato mantenendolo sempre in orizzontale.
+            Infine viene asciugato tramite aria calda e ventilata, senza calore eccessivo e senza essere centrifugato, con un controllo a vista per tutta la durata dell'operazione. 
+</p>
+        </div>
+
+        <br>
+        <br>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+
+      <div class="footer-left">
+        <h3>DOPPIO NODO</h3>
+        <p>Via Ippolito d'Aste, 26/R<br>
+          Genova, GE 16121</p>
+        <p>Tel: 0103728283 <br> Cell: +39 3472603538</p>
+        <p>email: doppionodo.tappeti@gmail.com</p>
+      </div>
+    
+      <div class="footer-right-wrapper">  <div class="footer-right">  <i><a href="index.php">Home</a></i>
+          <i><a href="index.php#chi-siamo" id="link-chi-siamo-footer">Chi siamo</a></i>
+          <i><a href="index.php#servizi" id="link-servizi">Servizi</a></i>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p><a href="policy.php">PRIVACY POLICY</a></p>
+        <p><a href="policy.php#cookie" id="link-cookie">COOKIE POLICY</a></p><br><br>
+    
+      </div>
+      <div class="copyright">
+        <p>Copyright © 1975 - All rights Reserved. - P.IVA 03296200102</p>
+    
+      </div>
+    </footer>
+    
+    
+    </script>
+    
+    <script src="javascript/script_navbar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="javascript/script_home.js"></script>
+
+  </body>
+</html>
