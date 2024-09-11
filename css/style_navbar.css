@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.logo {
+  position: relative;
+  display: block;
+  text-align: unset;
+  margin: unset;
+  left: -30px;
+}
+
+#spinner {
+  border: 0.5vw solid #e7e7e7;
+  border-top: 0.5vw solid #000000;
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  margin: auto;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+img.small {
+  max-width: 400px;
+  height: auto;
+  position: relative;
+
+  display: block;
+}
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(1deg, #000000, #262626);
+  z-index: 9999;
+}
+
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+}
+
+.logo-container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(360deg, #000000, #4b4b4b);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  position: fixed;
+  z-index: 2;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+nav ul li {
+  margin: 10px 5px 0 0;
+}
+
+nav ul li a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 350;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  left: -80px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+  color: #111;
+  background: #ffffff;
+}
+
+nav .menu-btn i {
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.fa-solid {
+  color: #434343;
+  margin-left: 6px;
+}
+
+.dropdown-item.active {
+  background: linear-gradient(5deg, #d65c4e, #bb3b37);
+}
+
+.search-box {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50px;
+  width: 240px;
+  padding: 0 6px;
+  height: 40px;
+  border: none;
+  float: right;
+}
+
+.search-input {
+  position: absolute;
+  outline: none;
+  border: none;
+  background: none;
+  width: 0;
+  padding: 0;
+  color: #fff;
+  float: left;
+  line-height: 40px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.search-input::placeholder {
+  color: #000000;
+}
+
+.search-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.search-btn:focus {
+  outline: none;
+}
+
+.search-input:focus {
+  width: calc(100% - 30px);
+  margin-left: 16px;
+  color: #000000;
+}
+
+.button_account {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #3c4043;
+  border-radius: 24px;
+  padding: 2px 24px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  cursor: pointer;
+  margin-left: 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+}
+
+.button_account:hover {
+  background: #6a6a6a;
+  color: #ffffff;
+}
+
+.button_account:focus {
+  outline: none;
+  border: 2px solid #3f4040;
+}
+
+.mini_button_account {
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 6px 24px;
+  height: 48px;
+  border-radius: 160px;
+  background-color: #ffffff;
+  color: #3c4043;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+}
+
+.mini_button_account i {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #616161;
+}
+
+.dropdown-menu-custom.show {
+  display: block;
+  top: -30px !important;
+  left: -100px !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 1770px) {
+  .search-box {
+    right: 50px;
+  }
+
+  .mini_button_account {
+    display: inline-flex;
+  }
+
+  .button_account {
+    display: none;
+  }
+}
+
+@media (max-width: 1683px) {
+  .search-box {
+    display: none;
+  }
+
+  nav ul {
+    left: 428px;
+    top: 18px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .logo {
+    margin:auto;
+  }
+  
+  nav .menu-btn i{
+    display: block;
+    position: absolute;
+    margin-right: 0px;
+    left: 28px;
+    top: 28px;
+
+  }
+
+  
+#click1:checked ~ .menu-btn i {
+    display: none;   
+  }
+
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+    position: sticky;
+    margin-left: 50%;
+  }
+
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: linear-gradient(190deg, #000000,#808080);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+
+  }
+  #click:checked ~ ul{
+    left: 0;
+    height:100%;
+
+  }
+
+  #click:checked ~ ul{
+    left: 0;
+    height:100%;
+
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px;
+    text-align: center;
+  }
+  nav ul li a{
+    width: auto; /* Cambia da 100% a auto */
+    margin-left: 0; /* Rimuovi il margine */
+    display: inline-block; /* Cambia da block a inline-block */
+    text-align: center;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  }
+  #click:checked ~ ul li a{
+    margin-left: 47px;
+  }
+  
+}
+
+@media (max-width: 679px) {
+  img.small {
+    margin: auto;
+    width: 90%;
+    top: 1vw;
+  }
+
+  .logo {
+    position: absolute;
+    width: 60%;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mini_button_account {
+    top: 1.4em;
+    right: 5%;
+    height: 6vw;
+    width: 6vw;
+  }
+
+  .mini_button_account i {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .mini_button_account {
+    top: 28px;
+  }
+}
