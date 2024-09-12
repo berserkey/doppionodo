@@ -54,7 +54,7 @@ if (window.location.pathname == '/doppionodo/index.html') {
   
 }
 
-if (window.location.pathname === '/doppionodo/policy.html') {
+if (window.location.pathname == '/doppionodo/policy.html') {
   // Funzioni per gestire i click sui link
   document.getElementById('link-cookie').addEventListener('click', function(event) {
     event.preventDefault();
