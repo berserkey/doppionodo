@@ -17,11 +17,13 @@ function scrollToTarget(targetId) {
     });
   }
 }
-console.log("Current page pathname:", window.location.pathname);
+console.log("Current pagess pathname:", window.location.pathname);
 
 // Controlla se l'URL attuale è home.html
-if (window.location.pathname === '/doppionodo/index.html') {
+if (window.location.pathname == '/doppionodo/index.html') {
   // Funzioni per gestire i click sui link
+  console.log("entrato");
+
   document.getElementById('link-chi-siamo').addEventListener('click', function(event) {
     event.preventDefault();
     console.log("entrato");
