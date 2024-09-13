@@ -16,7 +16,7 @@
       <img src="../images/logo.png" class="small" alt="Logo Doppio Nodo">
     </a>
   </div>
-
+  s
   <ul>
     <li><a href="index.php">Home</a></li>
     <li><a href="index.php#chi-siamo" id="link-chi-siamo">Chi siamo</a></li>
