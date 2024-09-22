@@ -68,7 +68,7 @@ i a:hover{
 
 p,li {
   margin-bottom: 0 !important;
-  padding-bottom: 40px !important;
+  padding-bottom: 40px;
   font-size: 1.2em !important;
   font-family: 'Cormorant Garamond', serif;
 
