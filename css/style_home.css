@@ -314,3 +314,14 @@ hr { display: block; height: 30px;
   
   }
 }
+
+@media (max-width: 420px) {
+  
+  .overlay3 h1 {
+
+    font-size: 45px;
+    bottom:unset;
+  
+  }
+
+}
